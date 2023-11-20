@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weatherApp</title>
+    <link rel="stylesheet" href="index.css">
+   <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+</head>
+<body>
+  
+    <!-- login page -->
+    <div class="front">
+        <h3><span>W</span>eather App</h3>
+       
+       
+    <div class="box">  
+        <h3>Username</h3>
+        <input type="text" id="input1" placeholder="ABCxyz.123"><br>
+        <h3 id="x">Password</h3>
+        <input type="text" id="input2" placeholder="Password"><br>
+        <button type="button"  class="btn1" onclick="signup()">sign up</button>
+        <button type="button" id="a" class="btn2" onclick="login()">log in</button>
+        <button type="button" id="a1" class="btng" onclick="loging()">log in</button><br>
+
+        <div class="inbtn">
+        <button type="button" class="btnG" onclick="loginG()"></button>
+
+        <button type="button" class="btnF" onclick="loginF()"></button>
+        
+        <button type="button" class="btnA" onclick="loginA()"></button>
+        
+        <button type="button" class="btnT" onclick="loginT()"></button>
+   
+        
+      
+        <button type="button" class="btnL" onclick="loginL()"></button>
+       
+    
+        </div>
+        
+        <div id="message">
+            login and use this app
+        </div>
+    </div>
+    </div>
+    <!-- login page end -->
+    <button type="button" class="btn3" onclick="logout()">log out</button>
+
+    <div class="card">
+        <div id="clock"></div>
+        <div class="search">
+            <input type="text " placeholder="enter city name" spellcheck=" false">
+            <button ><img src="search.png" alt=""></button>
+        </div>
+       
+        <div class="weather">
+            <img src="50d@2x.png" class="weather-icon">
+            <h3 class="atmos">______</h3>
+            <h1 class="temp">--°C</h1>
+            <h1 class="temp2">--°C</h1>
+            <h2 class="city">City Name</h2>
+            <h2 class="city2">Invalid City Name</h2>
+            <!-- <div> <h3>Sunrise</h3><p class="sun1">00:00</p>
+                    
+                </div>
+
+            <div> <h3>Sunset</h3><p class="sun2">00:00</p>
+                    
+                </div> -->
+
+        
+            
+
+          
+            <div class="details">
+                <div class="col">
+                    <img src="humidity.png" alt="">
+                    <div> <p class="humidity">--%</p>
+                    
+                    <p>Humidity</p></div>
+
+                </div>
+                
+            <div class="col">
+                <img src="wind.png" alt="">
+                <div> <p class="wind">--km/h</p>
+               
+                <p>Wind Speed</p></div>
+
+            </div>
+           
+        </div>
+        </div>
+    </div>
+
+
+    <script src="index.js"></script>
+   
+</body>
+</html>
